@@ -1,0 +1,13 @@
+{
+  "name": "product-manager-main",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k \"npm --prefix ba run dev\" \"npm --prefix fo run dev -- --host 0.0.0.0 --force\"",
+    "dev:ba": "npm --prefix ba run dev",
+    "dev:fo": "npm --prefix fo run dev -- --host 0.0.0.0 --force",
+    "build:fo": "npm --prefix fo run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
